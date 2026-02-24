@@ -1,0 +1,30 @@
+.image-wrapper {
+  width: 100%;
+  height: 300px;          /* 🔥 SAME SIZE FOR ALL */
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      /* keeps proper cropping */
+  display: block;
+}
+
+/* Variants */
+.image-wrapper.about {
+  height: 400px;
+}
+
+.image-wrapper.card {
+  height: 250px;
+}
+
+.image-wrapper.gallery {
+  height: 300px;
+}
+
+.image-wrapper.hero {
+  height: 100vh;
+}

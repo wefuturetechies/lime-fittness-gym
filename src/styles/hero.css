@@ -1,0 +1,93 @@
+.hero {
+  position: relative;
+  margin-top: 80px;
+  height: 100vh;
+  width: 100%;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+/* Dark Gradient Overlay */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0.85)
+  );
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 20px;
+}
+
+/* Heading */
+.hero-content h1 {
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.hero-content h1 span {
+  color: lime;
+}
+
+/* Paragraph */
+.hero-content p {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #ddd;
+}
+
+/* Buttons */
+.hero-buttons {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn-primary {
+  padding: 14px 32px;
+  background: lime;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #9cff00;
+  transform: translateY(-3px);
+}
+
+.btn-secondary {
+  padding: 14px 32px;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: white;
+  color: black;
+  transform: translateY(-3px);
+}

@@ -1,0 +1,44 @@
+.programs {
+  padding: 100px 0;
+  text-align: center;
+  background: #f8f8f8;
+}
+
+.section-title {
+  font-size: 36px;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+.program-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  padding: 0 40px;
+}
+
+.program-card {
+  flex: 1;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.program-card:hover {
+  transform: translateY(-8px);
+}
+
+.program-card h3 {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.program-card p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+}

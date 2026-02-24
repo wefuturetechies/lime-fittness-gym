@@ -1,0 +1,23 @@
+.membership {
+  padding: 80px 50px;
+  text-align: center;
+}
+
+.membership-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.membership-card {
+  padding: 30px;
+  background: black;
+  color: white;
+  border-radius: 10px;
+}
+
+.highlight {
+  background: lime;
+  color: black;
+}

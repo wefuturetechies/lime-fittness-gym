@@ -1,0 +1,11 @@
+.contact {
+  padding: 80px 50px;
+  text-align: center;
+  background: black;
+  color: white;
+}
+
+.contact a {
+  color: lime;
+  text-decoration: none;
+}
