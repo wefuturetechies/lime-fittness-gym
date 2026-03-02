@@ -1,21 +1,94 @@
+/* ===== SECTION ===== */
 .gallery {
   padding: 100px 0;
+  background: #0b0f0d;
   text-align: center;
-  background: #f8f8f8;
+  color: white;
+  overflow: hidden;
+  position: relative;
 }
 
-.section-title {
-  font-size: 36px;
-  margin-bottom: 50px;
-  font-weight: bold;
+.gallery-header h2 {
+  font-size: 42px;
+  font-weight: 800;
 }
 
-.gallery-grid {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 40px;
-
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+.gallery-header span {
+  color: lime;
 }
+
+.gallery-header p {
+  margin-top: 10px;
+  color: #aaa;
+}
+
+/* ===== SLIDER WRAPPER ===== */
+.gallery-slider {
+  max-width: 1100px;
+  margin: 60px auto 0;
+  position: relative;
+}
+
+/* Side dark gradient fade */
+.gallery-slider::before,
+.gallery-slider::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 150px;
+  height: 100%;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.gallery-slider::before {
+  left: 0;
+  background: linear-gradient(to right, #0b0f0d, transparent);
+}
+
+.gallery-slider::after {
+  right: 0;
+  background: linear-gradient(to left, #0b0f0d, transparent);
+}
+
+/* ===== DEFAULT SLIDE ===== */
+.swiper-slide {
+  transition: all 0.7s ease;
+  opacity: 0.4;
+  filter: blur(8px);
+  transform: scale(0.85);
+}
+
+/* ===== CENTER SLIDE ===== */
+.swiper-slide-active {
+  opacity: 1;
+  filter: blur(0);
+  transform: scale(1);
+  z-index: 5;
+}
+
+/* ===== CARD ===== */
+.slide-card {
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.slide-card img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 25px;
+  transition: 0.7s ease;
+}
+
+/* Pagination */
+.swiper-pagination-bullet {
+  background: #555;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: lime;
+  transform: scale(1.2);
+}
+
