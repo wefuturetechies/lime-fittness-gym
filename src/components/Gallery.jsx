@@ -16,6 +16,7 @@ const Gallery = () => {
     images.gallery3,
     images.gallery4
   ];
+  console.log(galleryImages);
 
   return (
     <section className="gallery" id="gallery">
