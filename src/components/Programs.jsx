@@ -20,7 +20,7 @@ const Programs = () => {
             <div className="program-icon">🔥</div>
             <h3>STRENGTH TRAINING</h3>
             <p>Build muscle and increase raw power with progressive overload.</p>
-            <a href="#">Learn More →</a>
+            <a href="#programs">Learn More →</a>
           </div>
         </div>
 
@@ -30,7 +30,7 @@ const Programs = () => {
             <div className="program-icon">⚡</div>
             <h3>HIIT WORKOUTS</h3>
             <p>High-intensity intervals for maximum fat burn and endurance.</p>
-            <a href="#">Learn More →</a>
+            <a href="#programs">Learn More →</a>
           </div>
         </div>
 
@@ -40,7 +40,7 @@ const Programs = () => {
             <div className="program-icon">💚</div>
             <h3>CARDIO FITNESS</h3>
             <p>Boost cardiovascular health with diverse cardio programs.</p>
-            <a href="#">Learn More →</a>
+            <a href="#programs">Learn More →</a>
           </div>
         </div>
         <div className="program-card">

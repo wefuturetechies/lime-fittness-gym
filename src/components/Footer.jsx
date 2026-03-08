@@ -26,14 +26,14 @@ const Footer = () => {
             </a>
 
             {/* Facebook */}
-            <a href="#">
+            <a href="https://instagram.com">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M13 22v-8h3l1-4h-4V8c0-1 0-2 2-2h2V2h-3c-4 0-5 2-5 5v3H6v4h3v8h4z" />
               </svg>
             </a>
 
             {/* Twitter */}
-            <a href="#">
+            <a href="https://twitter.com">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M22 5.9c-.7.3-1.5.6-2.3.7.8-.5 1.4-1.3 1.7-2.2-.8.5-1.7.8-2.6 1A4.1 4.1 0 0 0 12 8.5c0 .3 0 .6.1.9-3.4-.2-6.4-1.8-8.4-4.3-.3.6-.5 1.3-.5 2 0 1.4.7 2.6 1.9 3.3-.7 0-1.3-.2-1.8-.5v.1c0 2 1.4 3.6 3.3 4-.3.1-.7.1-1 .1-.2 0-.5 0-.7-.1.5 1.6 2.1 2.8 4 2.9A8.3 8.3 0 0 1 2 19.5a11.7 11.7 0 0 0 6.3 1.8c7.5 0 11.6-6.3 11.6-11.7v-.5c.8-.5 1.5-1.2 2.1-2z" />
               </svg>
