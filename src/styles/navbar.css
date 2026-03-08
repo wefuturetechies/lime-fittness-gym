@@ -1,4 +1,64 @@
-/* Hamburger */
+/* NAVBAR */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 40px;
+
+  background: black;
+  color: white;
+  z-index: 1000;
+}
+
+/* LOGO */
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid lime;
+}
+
+.logo-text {
+  color: lime;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* NAV LINKS */
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: lime;
+}
+
+/* HAMBURGER */
 
 .hamburger {
   display: none;
@@ -14,7 +74,7 @@
   transition: 0.3s;
 }
 
-/* Hamburger animation */
+/* HAMBURGER ANIMATION */
 
 .hamburger.open span:nth-child(1) {
   transform: rotate(45deg) translate(6px,6px);
@@ -28,7 +88,7 @@
   transform: rotate(-45deg) translate(6px,-6px);
 }
 
-/* Overlay */
+/* OVERLAY */
 
 .overlay {
   position: fixed;
@@ -44,33 +104,34 @@
   visibility: visible;
 }
 
-/* Mobile menu */
+/* MOBILE */
 
 @media (max-width:768px){
 
-  .hamburger {
-    display: flex;
+  .hamburger{
+    display:flex;
   }
 
-  .nav-links {
+  .nav-links{
     position: fixed;
-    top: 0;
+    top: 80px;
     right: -100%;
-    width: 260px;
+    width: 250px;
     height: 100vh;
 
     background: #111;
 
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 
     gap: 30px;
+    padding-top: 40px;
 
     transition: 0.4s;
   }
 
-  .nav-links.active {
+  .nav-links.active{
     right: 0;
   }
 
