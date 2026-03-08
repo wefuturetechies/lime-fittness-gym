@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/navbar.css";
 import logo from "../assets/logo1.png";
 
 const Navbar = () => {
+
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <nav className="navbar">
 
@@ -11,14 +18,31 @@ const Navbar = () => {
         <h2 className="logo-text">LIME FITNESS</h2>
       </div>
 
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#programs">Programs</a></li>
-        <li><a href="#membership">Membership</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#contact">Contact</a></li>
+      {/* Overlay */}
+      <div
+        className={`overlay ${menuOpen ? "show" : ""}`}
+        onClick={closeMenu}
+      ></div>
+
+      {/* Menu */}
+      <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
+        <li><a href="#home" onClick={closeMenu}>Home</a></li>
+        <li><a href="#about" onClick={closeMenu}>About</a></li>
+        <li><a href="#programs" onClick={closeMenu}>Programs</a></li>
+        <li><a href="#membership" onClick={closeMenu}>Membership</a></li>
+        <li><a href="#gallery" onClick={closeMenu}>Gallery</a></li>
+        <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
       </ul>
+
+      {/* Hamburger Button */}
+      <div
+        className={`hamburger ${menuOpen ? "open" : ""}`}
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
 
     </nav>
   );
