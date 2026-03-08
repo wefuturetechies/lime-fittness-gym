@@ -1,12 +1,12 @@
 .about {
-  padding: 100px 0;
-  background: #f8f8f8;
+  background: #0b0b0b;
+  padding: 100px 40px;
+  color: white;
 }
 
-.about-content {
-  max-width: 900px;
+.about-container {
+  max-width: 1200px;
   margin: auto;
-  padding: 0 40px;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -14,20 +14,117 @@
   align-items: center;
 }
 
-.about-text {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+/* LEFT */
+
+.about-left h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
 }
 
-.about-image {
-  flex: 1;
+.about-left span {
+  color: #00ff2a;
 }
 
-.about-image img {
+.about-desc {
+  color: #aaa;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+/* FEATURE GRID */
+
+.features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.feature-card {
+  border: 1px solid #00ff2a40;
+  padding: 20px;
+  border-radius: 12px;
+  background: #111;
+  transition: 0.3s;
+}
+
+.feature-card:hover {
+  border-color: #00ff2a;
+  transform: translateY(-4px);
+}
+
+.feature-card .icon {
+  font-size: 24px;
+  color: #00ff2a;
+  margin-bottom: 10px;
+}
+
+.feature-card h4 {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.feature-card p {
+  font-size: 13px;
+  color: #aaa;
+}
+
+/* RIGHT IMAGE */
+
+.about-right {
+  position: relative;
+}
+
+.about-right img {
   width: 100%;
-  height: 100%;          /* match text height */
-  object-fit: cover;
   border-radius: 16px;
+  box-shadow: 0 0 40px #00ff2a60;
+}
+
+/* EXPERIENCE BOX */
+
+.experience-box {
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+
+  background: #00ff2a;
+  color: black;
+
+  padding: 20px 25px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.experience-box h3 {
+  font-size: 28px;
+}
+
+.experience-box p {
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 0 20px;
+  }
+
+  .about-left h2 {
+    font-size: 28px;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .about-right img {
+    width: 100%;
+    height: auto;
+  }
+
+  .experience-box {
+    left: 10px;
+    bottom: -10px;
+  }
 }

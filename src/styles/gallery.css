@@ -92,3 +92,14 @@
   transform: scale(1.2);
 }
 
+@media (max-width: 768px) {
+
+  .slide-card img {
+    height: 300px;
+  }
+
+  .gallery-header h2 {
+    font-size: 28px;
+  }
+
+}

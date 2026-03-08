@@ -7,7 +7,7 @@ const Hero = () => {
     <header
       className="hero"
       id="home"
-      style={{ backgroundImage: `url(${images.hero})` }}
+      style={{ backgroundImage: `url(${images.landing})` }}
     >
       <div className="hero-overlay"></div>
 

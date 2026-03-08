@@ -4,26 +4,63 @@ import "../styles/contact.css";
 const Contact = () => {
   return (
     <section className="contact" id="contact">
-      <h2>Contact Us</h2>
+      <h2 className="contact-title">
+        GET IN <span>TOUCH</span>
+      </h2>
 
-      <p>
-        📍 No. 105, MS Plaza, GST Road,
-        Chengalpattu, Tamil Nadu – 603001
-      </p>
+      <div className="contact-container">
 
-      <p>
-        📞 <a href="tel:+919677093038">+91 96770 93038</a>
-      </p>
+        {/* LEFT SIDE */}
+        <div className="contact-info">
 
-      <p>
-        📧 <a href="mailto:limefitnessstudio@gmail.com">
-          limefitnessstudio@gmail.com
-        </a>
-      </p>
+          <div className="contact-item">
+            <div className="icon">📍</div>
+            <div>
+              <h4>LOCATION</h4>
+              <p>123 Main Road, Chengalpattu, Tamil Nadu</p>
+            </div>
+          </div>
 
-      <button onClick={() => window.location.href = "tel:+919677093038"}>
-        Get Free Trial
-      </button>
+          <div className="contact-item">
+            <div className="icon">📞</div>
+            <div>
+              <h4>PHONE</h4>
+              <p>+91 98765 43210</p>
+            </div>
+          </div>
+
+          <div className="contact-item">
+            <div className="icon">✉️</div>
+            <div>
+              <h4>EMAIL</h4>
+              <p>info@limefitness.com</p>
+            </div>
+          </div>
+
+          <div className="contact-item">
+            <div className="icon">🕒</div>
+            <div>
+              <h4>HOURS</h4>
+              <p>Mon-Sat: 5AM - 10PM | Sun: 7AM - 8PM</p>
+            </div>
+          </div>
+
+        </div>
+
+        {/* RIGHT SIDE FORM */}
+        <form className="contact-form">
+
+          <input type="text" placeholder="Your Name" required />
+
+          <input type="email" placeholder="Your Email" required />
+
+          <textarea placeholder="Your Message" rows="5"></textarea>
+
+          <button type="submit">SEND MESSAGE</button>
+
+        </form>
+
+      </div>
     </section>
   );
 };
