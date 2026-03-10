@@ -56,10 +56,10 @@ const Footer = () => {
         {/* Middle Section */}
         <div className="footer-links">
           <h3>QUICK LINKS</h3>
-          <a href="#home">Home</a>
-          <a href="#programs">Programs</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
+          <a href="/#home">Home</a>
+          <a href="/#programs">Programs</a>
+          <a href="/#about">About</a>
+          <a href="/#contact">Contact</a>
         </div>
 
         {/* Right Section */}

@@ -26,12 +26,12 @@ const Navbar = () => {
 
       {/* Menu */}
       <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
-        <li><a href="#home" onClick={closeMenu}>Home</a></li>
-        <li><a href="#about" onClick={closeMenu}>About</a></li>
-        <li><a href="#programs" onClick={closeMenu}>Programs</a></li>
-        <li><a href="#membership" onClick={closeMenu}>Membership</a></li>
-        <li><a href="#gallery" onClick={closeMenu}>Gallery</a></li>
-        <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
+        <li><a href="/#home" onClick={closeMenu}>Home</a></li>
+        <li><a href="/#about" onClick={closeMenu}>About</a></li>
+        <li><a href="/#programs" onClick={closeMenu}>Programs</a></li>
+        <li><a href="/#membership" onClick={closeMenu}>Membership</a></li>
+        <li><a href="/#gallery" onClick={closeMenu}>Gallery</a></li>
+        <li><a href="/#contact" onClick={closeMenu}>Contact</a></li>
       </ul>
 
       {/* Hamburger Button */}

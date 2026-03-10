@@ -1,17 +1,16 @@
 .membership {
-  padding: 100px 50px;
-  background: #0f0f0f;
-  color: white;
+  padding: 100px 40px;
+  background: #0b0f0d;
   text-align: center;
+  color: white;
 }
 
 .membership-header h2 {
-  font-size: 42px;
-  font-weight: 800;
+  font-size: 40px;
 }
 
 .membership-header span {
-  color: rgb(86, 221, 86);
+  color: lime;
 }
 
 .membership-header p {
@@ -19,103 +18,53 @@
   margin-top: 10px;
 }
 
-.membership-container {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
+.membership-grid {
   margin-top: 60px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin-inline: auto;
 }
 
 .membership-card {
-  background: #1a1a1a;
-  padding: 40px 30px;
-  border-radius: 15px;
-  width: 300px;
-  position: relative;
-  transition: 0.3s ease;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  background: #111;
+  border: 1px solid #333;
+  padding: 30px;
+  border-radius: 12px;
+  transition: 0.3s;
 }
 
 .membership-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 40px rgba(0, 255, 0, 0.2);
-}
-
-.membership-card h3 {
-  font-size: 22px;
-  margin-bottom: 10px;
+  transform: translateY(-8px);
+  border-color: lime;
 }
 
 .membership-card h1 {
-  font-size: 40px;
-  margin: 10px 0;
-}
-
-.membership-card h4 {
-  color: #aaa;
-  margin-bottom: 20px;
+  color: lime;
+  margin: 15px 0;
 }
 
 .membership-card ul {
   list-style: none;
   padding: 0;
-  text-align: left;
-  margin-bottom: 25px;
+  margin: 20px 0;
 }
 
-.membership-card ul li {
-  margin-bottom: 10px;
-  font-size: 14px;
+.membership-card li {
+  margin: 8px 0;
+  color: #ccc;
 }
 
 .membership-card button {
-  width: 100%;
-  padding: 12px;
-  border: none;
-  border-radius: 8px;
   background: lime;
-  color: black;
+  border: none;
+  padding: 12px 20px;
   font-weight: bold;
+  border-radius: 6px;
   cursor: pointer;
-  transition: 0.3s ease;
 }
 
-.membership-card button:hover {
-  background: #9cff00;
-}
-
-/* Highlight Card */
 .highlight {
-  background: rgb(73, 228, 73);
-  color: black;
-  transform: scale(1.05);
-}
-
-.highlight button {
-  background: black;
-  color: white;
-}
-
-.highlight button:hover {
-  background: #222;
-}
-
-.badge {
-  position: absolute;
-  top: -15px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: black;
-  color: rgb(86, 228, 86);
-  padding: 6px 15px;
-  font-size: 12px;
-  border-radius: 20px;
-  font-weight: bold;
-}
-
-.membership-note {
-  margin-top: 60px;
-  color: #888;
-  font-size: 14px;
+  border: 2px solid lime;
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/programs.css";
 import images from "../assets/images";
-
+import { Link } from "react-router-dom";
 const Programs = () => {
   return (
     <section className="programs" id="programs">
@@ -20,7 +20,7 @@ const Programs = () => {
             <div className="program-icon">🔥</div>
             <h3>STRENGTH TRAINING</h3>
             <p>Build muscle and increase raw power with progressive overload.</p>
-            <a href="#programs">Learn More →</a>
+           <Link to="/program/strength">Learn More →</Link>
           </div>
         </div>
 
@@ -30,7 +30,7 @@ const Programs = () => {
             <div className="program-icon">⚡</div>
             <h3>HIIT WORKOUTS</h3>
             <p>High-intensity intervals for maximum fat burn and endurance.</p>
-            <a href="#programs">Learn More →</a>
+           <Link to="/program/hiit">Learn More →</Link>
           </div>
         </div>
 
@@ -40,7 +40,7 @@ const Programs = () => {
             <div className="program-icon">💚</div>
             <h3>CARDIO FITNESS</h3>
             <p>Boost cardiovascular health with diverse cardio programs.</p>
-            <a href="#programs">Learn More →</a>
+           <Link to="/program/cardio">Learn More →</Link>
           </div>
         </div>
         <div className="program-card">
@@ -49,6 +49,7 @@ const Programs = () => {
             <div className="program-icon">🏋️</div>
             <h3>CROSSFIT</h3>
             <p>Functional movements at high intensity for total body fitness.</p>
+            <Link to="/program/crossfit">Learn More →</Link>
           </div></div>
 
       </div>
